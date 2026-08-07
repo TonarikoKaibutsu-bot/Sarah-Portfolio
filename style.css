@@ -113,6 +113,43 @@ h3 { font-size: 1.35rem; }
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 
+/* Display four selected stories in a balanced two-by-two layout. */
+.case-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Supporting details for project cards without a link yet. */
+.case-skills {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--accent) !important;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.case-status {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+/* Reduce excess space above the framework and add breathing room below it. */
+.framework-section {
+  padding-top: clamp(3.5rem, 6vw, 5rem);
+  padding-bottom: clamp(6rem, 9vw, 8rem);
+}
+
+/* Center the contact buttons inside the contact card. */
+.contact-actions {
+  justify-content: center;
+}
+
+.contact-note {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
 @media (max-width: 900px) {
   .hero, .split { grid-template-columns: 1fr; }
   .proof-grid, .case-grid, .skills-grid { grid-template-columns: 1fr; }
