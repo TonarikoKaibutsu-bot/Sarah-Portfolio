@@ -116,6 +116,42 @@ h3 { font-size: 1.35rem; }
 /* Display four selected stories in a balanced two-by-two layout. */
 .case-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+}
+
+.case-card {
+  min-height: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.case-card h3 {
+  font-size: 1.25rem;
+}
+
+.case-card a {
+  margin-top: 0.85rem;
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Skills / capabilities shown at the bottom of each case card. */
+.case-skills {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--accent) !important;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.case-status {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: italic;
 }
 
 /* Supporting details for project cards without a link yet. */
