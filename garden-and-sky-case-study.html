@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Garden &amp; The Sky | Sarah W.</title>
+  <meta name="description" content="An independent product-design case study about local-first planning and learning tools.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="section case-study-page">
+    <header class="section-heading reveal">
+      <p class="eyebrow">Case Study · Independent Product Design</p>
+      <h1>The Garden &amp; The Sky</h1>
+      <p class="case-lede">
+        Two connected, local-first browser prototypes exploring a simple question:
+        what would personal software feel like if it helped someone return without
+        making them feel behind?
+      </p>
+    </header>
+
+    <section class="case-meta reveal" aria-label="Project overview">
+      <div>
+        <span>Project</span>
+        <strong>Planning and learning prototypes</strong>
+      </div>
+      <div>
+        <span>My role</span>
+        <strong>Product concept, UX strategy, content architecture, prototyping, and iterative testing</strong>
+      </div>
+      <div>
+        <span>Technology</span>
+        <strong>HTML, CSS, vanilla JavaScript, browser storage, and JSON backup/restore</strong>
+      </div>
+      <div>
+        <span>Status</span>
+        <strong>Working local-first prototypes in active testing</strong>
+      </div>
+    </section>
+
+    <section class="case-detail reveal">
+      <p class="eyebrow">The problem</p>
+      <h2>Returning should not feel like catching up.</h2>
+      <p>
+        Many planning and learning tools center accumulation: more tasks, longer
+        streaks, fuller dashboards, and visible evidence of unfinished work. That
+        can make returning after an interruption harder than starting.
+      </p>
+      <p>
+        I wanted to test a different model. The Garden supports planning, personal
+        organization, work, movement, nourishment, and ongoing projects. The Sky
+        supports short coding practice sessions. Both needed to be useful
+        and structured without turning every pause into a failure state.
+      </p>
+    </section>
+
+    <section class="case-detail reveal">
+      <p class="eyebrow">The design principle</p>
+      <h2>Return, not pressure.</h2>
+      <p>
+        “Gentle” could not be only a visual style or friendly copy. It had to shape
+        the interaction rules: no streaks, quotas, countdowns, rankings, or artificial
+        completion debt. The prototypes preserve useful context, distinguish plans
+        from confirmed activity, and let unfinished work remain safely unfinished.
+      </p>
+    </section>
+
+
+    <figure class="case-figure reveal">
+      <img src="assets/garden-sky/garden-threads.png" alt="The Garden Threads screen showing Active, Waiting, and Parked projects, each with a next small move and a saved stopping point.">
+      <figcaption>
+        <span>Garden · Threads</span>
+        Preserving the return point: projects retain a next small action and a human-readable place to resume, without treating a pause as neglected work.
+      </figcaption>
+    </figure>
+
+    <section class="case-detail reveal">
+      <p class="eyebrow">Selected design decisions</p>
+      <h2>Translate the philosophy into system behavior.</h2>
+
+      <div class="decision-grid">
+        <article class="decision-card">
+          <h3>Preserve the return point</h3>
+          <p>
+            Garden Threads retain both a next small move and the user’s stopping
+            point. Items can be Active, Waiting, or Parked without being treated
+            as neglected work.
+          </p>
+        </article>
+
+        <article class="decision-card">
+          <h3>Keep plans separate from actuals</h3>
+          <p>
+            Movement suggestions can create an editable draft, but the history
+            records only what the user explicitly confirms. A possible plan does
+            not silently become a completed activity.
+          </p>
+        </article>
+
+        <article class="decision-card">
+          <h3>Guard structured imports</h3>
+          <p>
+            Garden’s job-search CSV flow validates columns and values, lets users
+            map unfamiliar statuses before review, and replaces only the job-search
+            list after explicit confirmation.
+          </p>
+        </article>
+
+        <article class="decision-card">
+          <h3>Make feedback kind and exact</h3>
+          <p>
+            Sky practice explains why an answer fits or needs another look. A quick
+            retry can correct the moment without erasing the signal that the concept
+            deserves later independent practice.
+          </p>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="case-visual-section reveal" aria-label="Garden interaction examples">
+      <p class="eyebrow">Interaction examples</p>
+      <h2>Make the system’s promise visible.</h2>
+
+      <div class="case-figure-grid">
+        <figure class="case-figure">
+          <img src="assets/garden-sky/garden-move-choice.png" alt="The Garden Move screen offers multiple movement paths, including full session, short session, indoor option, gentle mobility, and intentional rest.">
+          <figcaption>
+            <span>Plan ≠ actual</span>
+            Suggestions create a possible, editable next step; they do not quietly log a completed activity.
+          </figcaption>
+        </figure>
+        <figure class="case-figure">
+          <img src="assets/garden-sky/garden-move-history.png" alt="The Garden recent history screen showing a confirmed recovery and mobility session after the user explicitly saved it.">
+          <figcaption>
+            <span>Explicit confirmation</span>
+            History records what actually happened only after the user chooses to save it.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="case-figure-grid">
+        <figure class="case-figure">
+          <img src="assets/garden-sky/garden-status-mapping.png" alt="The Garden CSV import flow asks the user to map an unfamiliar status before reviewing the import.">
+          <figcaption>
+            <span>Guarded import</span>
+            Unfamiliar status values are surfaced for a deliberate mapping decision before any data changes.
+          </figcaption>
+        </figure>
+        <figure class="case-figure">
+          <img src="assets/garden-sky/garden-import-confirmation.png" alt="The Garden CSV import confirmation explains that only job-search opportunities will be replaced.">
+          <figcaption>
+            <span>Scoped replacement</span>
+            The confirmation identifies exactly what will change and explicitly protects unrelated areas of the app.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <section class="case-visual-section reveal" aria-label="Sky interaction examples">
+      <p class="eyebrow">The Sky · learning by doing</p>
+      <h2>Teach the rule, then let it show itself.</h2>
+
+      <div class="case-figure-grid sky-figure-grid">
+        <figure class="case-figure">
+          <img src="assets/garden-sky/sky-code-preview.png" alt="A Sky HTML lesson showing literal HTML code with a contained browser preview beneath it.">
+          <figcaption>
+            <span>Contained practice</span>
+            Examples pair the literal HTML with a constrained browser preview, keeping the connection between code and result visible.
+          </figcaption>
+        </figure>
+        <figure class="case-figure">
+          <img src="assets/garden-sky/sky-correction.png" alt="A Sky HTML practice correction screen that explains why the title element belongs inside the head element and offers a retry.">
+          <figcaption>
+            <span>Kind, exact feedback</span>
+            A correction explains the reasoning, invites an immediate retry, and preserves the signal for independent review later.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="case-detail reveal">
+      <p class="eyebrow">Architecture and verification</p>
+      <h2>Keep personal data local, durable, and understandable.</h2>
+      <p>
+        The Garden and The Sky are independent static sites. They run without an
+        account, server, database, build process, or internet connection. Each app
+        uses its own browser-storage keys, offers versioned JSON export and import,
+        and requires confirmation before replacing saved data.
+      </p>
+      <p>
+        The Sky currently passes 33 automated logic checks covering content IDs,
+        answer handling, practice selection, state restoration, retries, backup
+        round-trips, content versioning, local lesson routing, and contained-preview
+        protections. Responsive, keyboard, screen-reader, and device checks remain
+        active manual QA work rather than claims of finished certification.
+      </p>
+    </section>
+
+    <section class="case-detail reveal">
+      <p class="eyebrow">What I learned</p>
+      <h2>A calm interface needs rigorous underlying rules.</h2>
+      <p>
+        This project reinforced that supportive design is built from data models,
+        defaults, error states, navigation, and carefully limited promises—not merely
+        colors and reassuring language. Removing pressure did not mean removing
+        structure. It meant being deliberate about what the system remembers, what it
+        asks of the user, and what it refuses to imply.
+      </p>
+    </section>
+
+    <aside class="case-callout reveal">
+      <p class="eyebrow">Why this belongs here</p>
+      <p>
+        The Garden and The Sky demonstrate the same habits I bring to implementation
+        and systems work: translate ambiguous needs into clear rules, distinguish
+        requirements from nice-to-haves, anticipate failure states, protect data
+        integrity, design for the actual user, test edge cases, and refine the result.
+      </p>
+    </aside>
+
+    <p class="case-note reveal">
+      This public case study intentionally shows selected decisions and non-sensitive
+      interface examples rather than source code, full data models, or an exhaustive
+      product specification.
+    </p>
+
+    <div class="hero-actions reveal">
+      <a class="button secondary" href="index.html#case-studies">
+        ← Back to case studies
+      </a>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
