@@ -191,3 +191,174 @@ h3 { font-size: 1.35rem; }
   nav { display: none; }
   h1 { max-width: 100%; }
 }
+
+
+/* Garden & Sky case study */
+.case-study-page {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.case-lede {
+  max-width: 65ch;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 2.5rem 0 5rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--line);
+}
+
+.case-meta > div {
+  padding: 1.2rem;
+  background: var(--panel);
+}
+
+.case-meta span {
+  display: block;
+  margin-bottom: .45rem;
+  color: var(--accent-2);
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.case-meta strong {
+  display: block;
+  line-height: 1.4;
+}
+
+.case-detail {
+  max-width: 760px;
+  margin: 0 0 4.5rem;
+}
+
+.case-detail > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.decision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.decision-card {
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255,255,255,.04);
+}
+
+.decision-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.case-callout {
+  max-width: 900px;
+  margin: 1rem 0 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(121,198,255,.3);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(121,198,255,.13), rgba(242,179,109,.08));
+}
+
+.case-callout p:last-child {
+  margin-bottom: 0;
+  font-size: 1.08rem;
+}
+
+.case-note {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: .92rem;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .case-meta,
+  .decision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-meta {
+    margin-bottom: 3.5rem;
+  }
+}
+
+
+/* Evidence figures for The Garden & The Sky case study */
+.case-visual-section {
+  margin: 0 0 4.5rem;
+}
+
+.case-visual-section > h2 {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.case-figure {
+  margin: 0 0 1.25rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+}
+
+.case-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #0b1015;
+}
+
+.case-figure figcaption {
+  padding: 1rem 1.15rem 1.15rem;
+  color: var(--muted);
+  font-size: .96rem;
+}
+
+.case-figure figcaption span {
+  display: block;
+  margin-bottom: .35rem;
+  color: var(--accent-2);
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.case-figure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.case-figure-grid .case-figure {
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.sky-figure-grid .case-figure img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (max-width: 900px) {
+  .case-figure-grid {
+    grid-template-columns: 1fr;
+  }
+}
