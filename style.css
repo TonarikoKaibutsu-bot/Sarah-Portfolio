@@ -311,15 +311,19 @@ h3 { font-size: 1.35rem; }
 .case-figure {
   margin: 0 0 1.25rem;
   overflow: hidden;
-  border: 1px solid var(--line);
+  padding: .55rem .55rem 0;
+  border: 1px solid rgba(121,198,255,.48);
   border-radius: 18px;
-  background: var(--panel);
+  background: linear-gradient(180deg, rgba(121,198,255,.08), var(--panel));
+  box-shadow: 0 16px 36px rgba(0,0,0,.18);
 }
 
 .case-figure img {
   display: block;
   width: 100%;
   height: auto;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 11px;
   background: #0b1015;
 }
 
